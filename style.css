@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: 
+  #00AEEF;
+    min-height: 100%; 
+    background-image: url('img/enfermagemFundo.png'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+main {
+  background-color: #f6f8ff;
+  padding: 26px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-bottom: 200px;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  max-width: 600px;
+}
+
+#form_principal {
+  display: flex;
+  flex-direction: column; /* ou row, conforme layout desejado */
+  gap: 16px;
+  align-items: center;
+}
+#img {
+  margin: 0 auto;
+  display: block;
+  max-width: 150px; /* ajuste conforme necessário */
+}
+
+#form_titulo {
+  font-weight: 500;
+  color: #272727;
+  position: relative;
+}
+
+#form_titulo::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  border-radius: 30px;
+  background-color: #2DBE3C;
+  bottom: -4px;
+  left: 0;
+}
+
+.btn-padrao {
+  background-color: #00B894; /* alterado para o novo verde */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 35px;
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.btn-padrao:hover {
+  background-color: #00AEEF;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+#input_conteudo {
+  display: grid;
+  gap: 24px;
+}
+
+.input-caixa {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #404044;
+}
+
+.input-campo {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0 10px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.input-campo input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.input-campo input:focus {
+  outline: none;
+}
+
+.input-campo:focus-within {
+  outline: 2px solid #6366f1;
+}
+
+.input-campo i {
+  color: #404044;
+  margin-left: 8px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  color: #000;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#genero_input,
+#especificacaoInput {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.radio-caixa {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+input[type="radio"] {
+  accent-color: #6366f1;
+  cursor: pointer;
+}
+      .home-titulo {
+    font-size: 2rem;
+    color: #00B894;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.home-descricao {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 24px;
+}
+/* Ajuste nos cards para ficarem mais uniformes */
+
+
+
+/* #painel-titulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    font-size: 2rem;
+    color: #2DBE3C;
+    margin: 0;
+    padding: 24px 0 16px 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: #f6f8ff;
+    z-index: 10;
+    box-shadow: 0px 2px 8px rgba(128,0,255,0.05);
+} */
+ #painel-titulo {
+    /* Remova position: absolute, top, left, width, z-index, box-shadow e background */
+    text-align: left;
+    font-size: 2.3rem;
+    color: black;
+    margin: 0 0 0 30px;
+    margin-bottom: 50px;
+    padding: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: none;
+    box-shadow: none;
+    position: static;
+}
+@media (max-width: 500px) {
+  main {
+    min-height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  #input_conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+#img {
+  margin: 500px;
+}
+#home-section {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 24px 0 0 0;
+}
+
+.home-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.home-avatar {
+    width: 48px;
+    height: 48px;
+    background: #e0e0e0;
+    color: #555;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-right: 8px;
+}
+
+.home-boasvindas {
+    font-size: 0.95rem;
+    color: #888;
+}
+
+.home-ola {
+    font-size: 1.15rem;
+    color: #222;
+}
+
+.home-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 18px 20px;
+    margin-bottom: 22px;
+}
+
+.home-resumo-titulo {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.home-resumo-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    margin-bottom: 7px;
+    color: #444;
+}
+
+.home-resumo-seta {
+    margin-left: auto;
+    color: #00B894;
+    font-weight: bold;
+}
+
+.home-acesso-titulo {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.home-acesso-rapido {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.home-acesso-btn {
+    background: linear-gradient(135deg, #00B894 80%, #00AEEF 100%);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    padding: 16px 10px 10px 10px;
+    width: 110px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.home-acesso-btn i {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.home-acesso-btn:hover {
+    background: linear-gradient(135deg, #00AEEF 80%, #00B894 100%);
+}
+
+#config-titulo {
+    font-weight: 500;
+    color: #272727;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+#config-titulo::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    border-radius: 30px;
+    background-color: #2DBE3C;
+    bottom: -4px;
+    left: 0;
+}
+
+.config-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.config-avatar {
+    width: 48px;
+    height: 48px;
+    background: #e0e0e0;
+    color: #555;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-right: 8px;
+}
+
+.config-boasvindas {
+    font-size: 0.95rem;
+    color: #888;
+}
+
+.config-ola {
+    font-size: 1.15rem;
+    color: #222;
+}
+
+.config-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 18px 20px;
+    margin-bottom: 22px;
+}
+
+.config-resumo-titulo {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.config-resumo-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    margin-bottom: 7px;
+    color: #444;
+}
+
+.config-resumo-seta {
+    margin-left: auto;
+    color: #00B894;
+    font-weight: bold;
+}
+
+.config-acesso-titulo {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.config-acesso-rapido {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.config-acesso-btn {
+    background: linear-gradient(135deg, #00B894 80%, #00AEEF 100%);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    padding: 16px 10px 10px 10px;
+    width: 110px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.config-acesso-btn i {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.config-acesso-btn:hover {
+    background: linear-gradient(135deg, #00AEEF 80%, #00B894 100%);
+}
